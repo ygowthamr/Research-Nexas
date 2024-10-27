@@ -324,6 +324,13 @@
         </button>
 
         <script>
+            const token = localStorage.getItem('accessToken');
+            if(token==null) {
+                window.location.href = '/';
+            }
+        </script>
+
+        <script>
             window.embeddedChatbotConfig = {
                 chatbotId: "iSwsMwg5TfWCzADbpz05-",
                 domain: "www.chatbase.co"
